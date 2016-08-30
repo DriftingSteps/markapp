@@ -4,6 +4,12 @@
 	clip-path: var(--clip-path);
 }
 
+html {
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+}
+
 body {
 	margin: 0;
 	font: 100%/1.5 Helvetica Neue, sans-serif;
@@ -63,6 +69,16 @@ body > footer {
 	margin-top: 2em;
 	color: white;
 	--clip-path: polygon(0% 1em, 100% 0, 100% 100%, 0% 100%);
+	position: relative;
+}
+body > footer:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	bottom: -99999px;
+	background: hsl(217, 10%, 30%);
 }
 
 #intro > p:first-of-type {
