@@ -7,6 +7,7 @@
 body {
 	margin: 0;
 	font: 100%/1.5 Helvetica Neue, sans-serif;
+	background: hsl(217, 10%, 30%); /* to match the footer background */
 }
 
 a {
